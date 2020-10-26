@@ -1,0 +1,11 @@
+#
+# Chipone touchscreen driver configuration
+#
+config TOUCHSCREEN_CHIPONE_TDDI_MMI
+	tristate "Chipone touchscreen in MMI revision"
+	help
+	  Say Y here if you have a Chipone touchscreen connected
+	  to your system.
+	  This revision supports MMI features.
+
+	  If unsure, say N.

@@ -1,0 +1,12 @@
+# Makefile for Chipone touchscreen drivers.
+
+obj-$(CONFIG_TOUCHSCREEN_CHIPONE_TDDI_MMI) += chipone_tddi_mmi.o
+chipone_tddi_mmi-objs += cts_i2c_driver.o
+chipone_tddi_mmi-objs += cts_core.o
+chipone_tddi_mmi-objs += cts_platform.o
+chipone_tddi_mmi-objs += cts_sfctrlv2.o
+chipone_tddi_mmi-objs += cts_spi_flash.o
+chipone_tddi_mmi-objs += cts_firmware.o
+chipone_tddi_mmi-objs += cts_tool.o
+chipone_tddi_mmi-objs += cts_sysfs.o
+chipone_tddi_mmi-objs += cts_test.o
