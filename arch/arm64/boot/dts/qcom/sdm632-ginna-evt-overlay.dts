@@ -26,3 +26,23 @@
 /*
  * Ginna HW rev EVT0 specific changes go here
  */
+
+&soc {
+        sound {
+                qcom,msm-ext-pa = "quinary";
+                ti,have-tas2562;
+        };
+};
+
+&i2c_2 {
+	tas2562:tas2562@4c {
+		compatible = "ti,tas2562";
+		reg = <0x4c>;
+		ti,channels = <1>;
+		ti,left-channel = <0x4c>;
+		ti,irq-gpio = <&tlmm 63 0>;
+		ti,reset-gpio = <&tlmm 94 0>;
+		ti,asi-format = <0>;   /* 0, i2S; 1, DSP; */
+		status = "ok";
+	};
+};
