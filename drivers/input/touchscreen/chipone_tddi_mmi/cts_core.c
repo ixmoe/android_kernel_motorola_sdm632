@@ -1887,15 +1887,8 @@ int cts_resume_device(struct cts_device *cts_dev)
 
 	cts_info("Resume device");
 
-#ifdef CFG_CTS_FW_UPDATE_FILE_LOAD
-	if (cts_dev->config_fw_name[0] != '\0') {
-		firmware = cts_request_firmware_from_fs(cts_dev,
-			cts_dev->config_fw_name);
-	}
-#else
 		firmware = cts_request_firmware(cts_dev,
 			cts_dev->hwdata->hwid, cts_dev->hwdata->fwid, 0);
-#endif
 		if (firmware) {
 			ret = cts_update_firmware(cts_dev, firmware, false);
 			cts_release_firmware(firmware);
