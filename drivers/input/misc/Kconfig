@@ -910,4 +910,6 @@ config INPUT_ABOV
 	  Say Y to enable the SAR detection application, if N here not to use the
 	  this SAR sensor
 
+source drivers/input/misc/abov_a96t/Kconfig
+
 endif

@@ -88,3 +88,4 @@ obj-$(CONFIG_SENSORS_FPC_1020)          += fpc1020_tee.o
 obj-$(CONFIG_INPUT_EGISTEC_FPS)         += ets_fps.o ets_navi_input.o
 obj-$(CONFIG_INPUT_ABOV)		+= abov_sar_mmi.o
 EXTRA_CFLAGS += -Idrivers/base
+obj-$(CONFIG_INPUT_ABOV_A96T)		+= abov_a96t/
