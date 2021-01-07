@@ -247,7 +247,7 @@
  * You should rename fw to "focaltech_ts_fw_tianma", and push it into
  * etc/firmware or by customers
  */
-#define FTS_MODULE_NAME                        ""
+#define FTS_MODULE_NAME                        "hlt"
 #define FTS_MODULE2_NAME                       ""
 #define FTS_MODULE3_NAME                       ""
 
@@ -257,7 +257,7 @@
  * NOTE: if FTS_GET_MODULE_NUM > 1, it's the fw corresponding with FTS_VENDOR_ID
  * NOTE: git may ignore xxx.i file
  */
-#define FTS_UPGRADE_FW_FILE                      "include/firmware/fw_sample.i"
+#define FTS_UPGRADE_FW_FILE                      "include/firmware/focaltech-hlt-ft8006s_aa-0b-0000-ginna.i"
 
 /*
  * if FTS_GET_MODULE_NUM >= 2, fw corrsponding with FTS_VENDOR_ID2
